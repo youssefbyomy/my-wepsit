@@ -1,0 +1,343 @@
+/* start global ruls */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+
+}
+.par{
+    background-color: aliceblue;
+    
+}
+.contenar{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+@media(min-width: 768px){
+.contenar{
+    width: 750px;
+}
+}
+
+@media (min-width: 992px){
+    .contenar{
+        width: 970px;
+    }
+}
+
+@media(min-width: 1200px){
+    .contenar{
+        width: 1170px;
+    }
+}
+/* end gluple ruls */
+
+/* start heder */
+
+.heder{
+    padding: 20px;
+    height: 64px;
+    
+}
+.heder .contenar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+.heder .logo{
+    width: 50px;
+}
+.heder .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.heder .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+.heder .links .icon span {
+    background-color: #333;
+    margin-bottom:5px ;
+    
+}
+.heder .links .icon .one {
+    height: 2px;
+    width: 100%;
+
+}
+
+.heder .links span:nth-child(2) {
+    height: 2px;
+    width: 60%;
+    transition: 500ms;
+}
+
+.heder .links .icon .there {
+    height: 2px;
+    width: 100%;
+}
+.heder .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c4b6b6;
+    position: absolute;
+    min-width: 200px;
+    right: 34px;
+    top: 58px;
+    display: none;
+    z-index: 1;
+} 
+.heder .links:hover ul{
+    display: block;
+    
+    
+}
+.heder .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent  #c4b6b6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.heder .links a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+}
+.heder .links a:hover{
+    padding-left: 40% ;
+    
+}
+.land {
+    background-color: rgb(5, 14, 97);
+    background-size: cover;
+    height: calc(55vh - 64px);
+    
+    
+    
+}
+.land .intro-text{
+    position: relative;
+    left: -3%;
+    top: 6%;
+    transform: translate(-50% -50%);
+    text-align: center;
+
+    
+}
+.land .intro-text h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    margin: 0px 5px 5px 25px;
+    padding-top: 36px;
+    padding-left: 6px;
+
+}
+
+/* end heder */
+
+ .fut{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px ;
+    /* background-color: #eeeeeef6; */
+    
+}
+
+.fut .cont {
+    margin: 0px 0px 0px 50px ;
+    
+}
+.fate1 {
+    display: inline-block;
+    margin-left: 50px;
+    width: 160px;
+
+}
+.fut h3 {
+    font-weight: 900;
+    margin: 30px 0px;
+    text-align: center;
+}
+.fut p {
+    font-size: 18px;
+    margin: 30px 0px;
+    text-align: center;
+    color: #777;
+}
+.fate2 {
+    display: inline-block;
+    margin-left: 50px;
+    width: 160px;
+}
+.fate3 {
+    display: inline-block;
+    margin-left: 50px;
+    width: 160px;
+}
+.fate4{
+    display: inline-block;
+    margin-left: 50px;
+    width: 160px;
+}
+
+.fut i {
+    color: #08a898 ;
+    margin-left: 53px;
+}
+.S-hed{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width:767px){
+    .S-hed{
+        font-size: 60px;
+        }
+        .wat h2 {
+            font-size: 30px;
+        }
+        .fut {
+            padding-left: 0px;
+            margin-left: -7px;
+        }
+        .land .intro-text h2 {
+            color: rgb(247, 0, 0);
+            font-size: 2px;
+            margin: 0;
+            font-weight: 900;
+            text-align: center;
+            margin: 0px 5px 5px 25px;
+            padding-top: 4px;
+            padding-left: 6px;
+                
+            }
+        }
+        .land .intro-text h2 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    margin: 0px 5px 5px 25px;
+    padding-top: 50px;
+    padding-left: 6px;
+        
+    }
+    .fut .cont {
+        margin: 0px 0px 0px 15px ;
+        
+    }
+    .land {
+        margin-top: -10px;
+    }
+    .land h1 {
+        color: #08a898;
+        font-size: 40px;
+        margin: 0px;
+        margin-left: 10px;
+        font-weight: 900;
+    
+    }
+}
+.cont p {
+    margin: -30px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+    padding: 5px;
+    margin-bottom: 50px;
+    padding-right: 13px;
+}
+.sirvs{
+    padding-bottom:50px ;
+    padding-top:50px ;
+    margin-top: -40px;
+}
+.col1 {
+    
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+
+}
+.wat h2 {
+    color: #ebeced;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin-top: 29px;
+    margin-bottom: -20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tex1{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tex{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.por {
+    color: #bdc3c9;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.call a{
+    text-decoration: none;
+    color: black;
+}
+.call {
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 10px 5px 10px 5px;
+}
+@media (max-width:767px){
+    .call {
+        text-align: center;
+        font-weight: 800;
+        font-size: 30px;
+        
+        
+    }
+}
+.call a:hover {
+    color: brown;
+}
+html{
+    scroll-behavior: smooth;
+}
